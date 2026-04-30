@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arteev Labs Inc. | Wellness Pattern Intelligence Studio</title>
+  <meta name="description" content="Arteev Labs Inc. is a mobile software development studio building wellness pattern intelligence products.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Arteev Labs Inc. home">
+        <span class="logo-mark">A</span>
+        <span>Arteev Labs</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Focus</a>
+        <a href="#company">Company</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Wellness pattern intelligence</div>
+          <h1>Building mobile software for everyday wellness awareness.</h1>
+          <p>
+            Arteev Labs Inc. develops mobile-first digital products that help users understand personal wellness patterns
+            through clear, consent-based, user-controlled experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:hello@arteev.co">Contact Us</a>
+            <a class="button secondary" href="#company">Company Information</a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Arteev product preview">
+          <div class="device-card">
+            <div class="status-row">
+              <span>Arteev</span>
+              <span>In development</span>
+            </div>
+            <div class="app-preview">
+              <span class="preview-chip">Wellness patterns</span>
+              <div class="preview-title">Private, consent-based wellness insights.</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Our focus</h2>
+          <p>
+            We build software that supports wellness awareness, habit reflection, and pattern discovery. Our products are
+            not intended to diagnose, treat, cure, or prevent any disease or medical condition.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Wellness Awareness</h3>
+            <p>Helping users better understand everyday wellness patterns through simple, privacy-conscious mobile experiences.</p>
+          </article>
+          <article class="card">
+            <h3>Consent-Based Data Use</h3>
+            <p>Where supported, users may choose to connect data sources such as Apple HealthKit. Access is optional and user-controlled.</p>
+          </article>
+          <article class="card">
+            <h3>Mobile Product Development</h3>
+            <p>Designing and developing mobile-first software products with clean user experience and reliable foundations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Company information</h2>
+          <p>
+            Arteev Labs Inc. is registered in the Republic of Korea and operates as a mobile software development studio.
+          </p>
+        </div>
+
+        <div class="company-panel">
+          <div class="company-row">
+            <div class="company-label">Legal Name</div>
+            <div>Arteev Labs Inc.</div>
+          </div>
+          <div class="company-row">
+            <div class="company-label">Business Type</div>
+            <div>Mobile software development studio</div>
+          </div>
+          <div class="company-row">
+            <div class="company-label">Product / Brand</div>
+            <div>Arteev</div>
+          </div>
+          <div class="company-row">
+            <div class="company-label">Address</div>
+            <div>
+              Misa-daero 550, 10fl, C-0001ho, V164<br>
+              Hanam-si, Gyeonggi-do 12925<br>
+              Republic of Korea
+            </div>
+          </div>
+          <div class="company-row">
+            <div class="company-label">Contact</div>
+            <div><a href="mailto:hello@arteev.co">hello@arteev.co</a></div>
+          </div>
+          <div class="company-row">
+            <div class="company-label">Website</div>
+            <div><a href="https://arteev.co">arteev.co</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Arteev Labs Inc. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
