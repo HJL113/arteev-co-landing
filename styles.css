@@ -111,7 +111,24 @@ p a:hover { text-decoration-color: var(--ink); }
 }
 
 .hero-inner {
-  max-width: 760px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
+  gap: 64px;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 640px;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-phone {
+  max-width: 280px;
+  margin: 0;
 }
 
 .eyebrow {
@@ -225,7 +242,8 @@ section {
 
 .section-heading {
   max-width: 760px;
-  margin-bottom: 56px;
+  margin: 0 auto 56px;
+  text-align: center;
 }
 
 .section-heading h2 {
@@ -239,7 +257,7 @@ section {
 }
 
 .section-heading p {
-  margin: 20px 0 0;
+  margin: 20px auto 0;
   color: var(--ink-soft);
   font-size: 1.05rem;
   line-height: 1.65;
@@ -285,10 +303,9 @@ section {
 
 /* ---------- Mission / What we build ---------- */
 .mission {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 56px;
-  max-width: 960px;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .mission-label {
@@ -297,6 +314,7 @@ section {
   color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .mission-body p {
@@ -316,15 +334,17 @@ section {
 /* ---------- Company info ---------- */
 .company-panel {
   border-top: 1px solid var(--line);
-  max-width: 880px;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .company-row {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 32px;
+  grid-template-columns: 1fr;
+  gap: 6px;
   padding: 22px 0;
   border-bottom: 1px solid var(--line);
+  text-align: center;
 }
 
 .company-label {
@@ -420,20 +440,29 @@ section {
 
   .section-heading { margin-bottom: 44px; }
 
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .hero-text { margin: 0 auto; }
+
+  .hero-lead { margin-left: auto; margin-right: auto; }
+
+  .hero-actions { justify-content: center; }
+
+  .hero-visual { justify-content: center; }
+
+  .hero-phone { max-width: 220px; }
+
   .gallery {
     gap: 40px;
   }
 
   .gallery-item .phone-mockup { max-width: 200px; }
 
-  .mission {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
   .company-row {
-    grid-template-columns: 1fr;
-    gap: 6px;
     padding: 18px 0;
   }
 
