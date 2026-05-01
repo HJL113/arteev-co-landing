@@ -112,8 +112,8 @@ p a:hover { text-decoration-color: var(--ink); }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 360px);
-  gap: 64px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+  gap: 40px;
   align-items: center;
 }
 
@@ -123,11 +123,11 @@ p a:hover { text-decoration-color: var(--ink); }
 
 .hero-visual {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .hero-phone {
-  max-width: 280px;
+  max-width: 340px;
   margin: 0;
 }
 
