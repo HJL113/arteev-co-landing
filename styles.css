@@ -111,24 +111,18 @@ p a:hover { text-decoration-color: var(--ink); }
 }
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
-  gap: 40px;
-  align-items: center;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.hero-text {
-  max-width: 640px;
+.hero-lead {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero-visual {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.hero-phone {
-  max-width: 340px;
-  margin: 0;
+.hero-actions {
+  justify-content: center;
 }
 
 .eyebrow {
@@ -440,28 +434,6 @@ section {
 
   .section-heading { margin-bottom: 44px; }
 
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 48px;
-    text-align: center;
-  }
-
-  .hero-text { margin: 0 auto; }
-
-  .hero-lead { margin-left: auto; margin-right: auto; }
-
-  .hero-actions { justify-content: center; }
-
-  .hero-visual { justify-content: center; }
-
-  .hero-phone { max-width: 220px; }
-
-  .gallery {
-    gap: 40px;
-  }
-
-  .gallery-item .phone-mockup { max-width: 200px; }
-
   .company-row {
     padding: 18px 0;
   }
@@ -483,13 +455,6 @@ section {
   .nav-links a:nth-child(2) {
     display: none;
   }
-
-  .gallery {
-    grid-template-columns: 1fr;
-    gap: 48px;
-  }
-
-  .gallery-item .phone-mockup { max-width: 180px; }
 
   .hero-actions { flex-direction: column; }
 
