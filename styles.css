@@ -116,11 +116,6 @@ p a:hover { text-decoration-color: var(--ink); }
   text-align: center;
 }
 
-.hero-lead {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .hero-actions {
   justify-content: center;
 }
@@ -160,7 +155,7 @@ h1 em {
 }
 
 .hero-lead {
-  margin: 28px 0 0;
+  margin: 28px auto 0;
   max-width: 540px;
   color: var(--ink-soft);
   font-size: 1.08rem;
