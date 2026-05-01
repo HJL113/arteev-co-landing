@@ -3,8 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arteev Labs Inc. | Wellness Pattern Intelligence Studio</title>
-  <meta name="description" content="Arteev Labs Inc. is a mobile software development studio building wellness pattern intelligence products.">
+  <title>Arteev Labs Inc. | Mobile software for personal wellness intelligence</title>
+  <meta name="description" content="Arteev Labs Inc. is a Korea-based mobile software studio building privacy-first wellness pattern intelligence products.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +19,7 @@
         <span>Arteev Labs</span>
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#services">Focus</a>
+        <a href="#product">Product</a>
         <a href="#company">Company</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
@@ -27,56 +31,83 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow"><span class="eyebrow-dot"></span> Wellness pattern intelligence</div>
-          <h1>Building mobile software for everyday wellness awareness.</h1>
-          <p>
-            Arteev Labs Inc. develops mobile-first digital products that help users understand personal wellness patterns
-            through clear, consent-based, user-controlled experiences.
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Arteev Labs Inc.</div>
+          <h1>Mobile software for <em>personal wellness intelligence</em>.</h1>
+          <p class="hero-lead">
+            We are a Seoul-area development studio building voice-first, privacy-conscious wellness products.
+            Our software helps people notice their own patterns &mdash; on their own terms, with their own data.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="mailto:hello@arteev.co">Contact Us</a>
-            <a class="button secondary" href="#company">Company Information</a>
+            <a class="button primary" href="mailto:hello@arteev.co">Contact us</a>
+            <a class="button secondary" href="#company">Company information</a>
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Arteev product preview">
-          <div class="device-card">
-            <div class="status-row">
-              <span>Arteev</span>
-              <span>In development</span>
-            </div>
-            <div class="app-preview">
-              <span class="preview-chip">Wellness patterns</span>
-              <div class="preview-title">Private, consent-based wellness insights.</div>
-            </div>
+        <div>
+          <div class="phone-mockup hero-mock" role="img" aria-label="Arteev mobile app — afternoon home screen">
+            <img src="assets/home.png" alt="Arteev app showing an afternoon wellness card with sleep and HRV signals">
           </div>
-        </aside>
+        </div>
       </div>
     </section>
 
-    <section id="services">
+    <section id="product">
       <div class="container">
         <div class="section-heading">
-          <h2>Our focus</h2>
+          <div class="section-eyebrow">Our flagship product</div>
+          <h2>Arteev &mdash; a voice-first wellness journal that notices your patterns for you.</h2>
           <p>
-            We build software that supports wellness awareness, habit reflection, and pattern discovery. Our products are
-            not intended to diagnose, treat, cure, or prevent any disease or medical condition.
+            People talk to Arteev for 20&ndash;60 seconds about their day. The app combines that voice log with
+            passive Apple HealthKit signals and returns an immediate visual reflection. Over time, the longer
+            someone uses it, the more accurately Arteev can describe their personal pattern. Arteev is a wellness
+            journal, not a medical device. It does not diagnose, treat, cure, or prevent any disease.
           </p>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <h3>Wellness Awareness</h3>
-            <p>Helping users better understand everyday wellness patterns through simple, privacy-conscious mobile experiences.</p>
-          </article>
-          <article class="card">
-            <h3>Consent-Based Data Use</h3>
-            <p>Where supported, users may choose to connect data sources such as Apple HealthKit. Access is optional and user-controlled.</p>
-          </article>
-          <article class="card">
-            <h3>Mobile Product Development</h3>
-            <p>Designing and developing mobile-first software products with clean user experience and reliable foundations.</p>
-          </article>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <div class="phone-mockup" role="img" aria-label="Arteev — morning home screen">
+              <img src="assets/home2.png" alt="Arteev app morning home screen with daily wellness card">
+            </div>
+            <figcaption>
+              <p class="gallery-caption">Morning</p>
+              <p class="gallery-sub">A warm greeting, a forward-looking daily reflection, and the evidence behind it.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <div class="phone-mockup" role="img" aria-label="Arteev — afternoon home screen">
+              <img src="assets/home.png" alt="Arteev app afternoon home screen with daily wellness card">
+            </div>
+            <figcaption>
+              <p class="gallery-caption">Afternoon</p>
+              <p class="gallery-sub">The same surface, re-themed for the time of day. The voice button stays one tap away.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="mission">
+          <div class="mission-label">Approach</div>
+          <div class="mission-body">
+            <p>
+              <strong>Privacy by default.</strong> Audio is transcribed on-device when possible and discarded
+              immediately after processing. Health data access is optional and routed through the operating
+              system's consent flow. We do not sell user data, ever.
+            </p>
+            <p>
+              <strong>Wellness, not medicine.</strong> Arteev helps users reflect on personal patterns. It is
+              not a diagnostic tool, not a substitute for professional care, and does not generate medical
+              advice.
+            </p>
+            <p>
+              <strong>Korea first.</strong> Our launch market is Korea. The product is localized in Korean,
+              and our company is registered in the Republic of Korea. International availability follows.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -84,27 +115,28 @@
     <section id="company">
       <div class="container">
         <div class="section-heading">
-          <h2>Company information</h2>
+          <div class="section-eyebrow">Company information</div>
+          <h2>Arteev Labs Inc.</h2>
           <p>
-            Arteev Labs Inc. is registered in the Republic of Korea and operates as a mobile software development studio.
+            Arteev Labs Inc. is a mobile software development studio registered in the Republic of Korea.
           </p>
         </div>
 
         <div class="company-panel">
           <div class="company-row">
-            <div class="company-label">Legal Name</div>
+            <div class="company-label">Legal name</div>
             <div>Arteev Labs Inc.</div>
           </div>
           <div class="company-row">
-            <div class="company-label">Business Type</div>
+            <div class="company-label">Business type</div>
             <div>Mobile software development studio</div>
           </div>
           <div class="company-row">
-            <div class="company-label">Product / Brand</div>
-            <div>Arteev</div>
+            <div class="company-label">Product</div>
+            <div>Arteev &mdash; wellness pattern intelligence app (in development)</div>
           </div>
           <div class="company-row">
-            <div class="company-label">Address</div>
+            <div class="company-label">Registered address</div>
             <div>
               Misa-daero 550, 10fl, C-0001ho, V164<br>
               Hanam-si, Gyeonggi-do 12925<br>
@@ -126,10 +158,11 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>© <span id="year"></span> Arteev Labs Inc. All rights reserved.</div>
+      <div>&copy; <span id="year"></span> Arteev Labs Inc. All rights reserved.</div>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
+        <a href="mailto:hello@arteev.co">Contact</a>
       </div>
     </div>
   </footer>
