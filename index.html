@@ -3,17 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Arteev Labs Inc. | Mobile software for personal wellness intelligence</title>
-  <meta name="description" content="Arteev Labs Inc. is a Korea-based mobile software studio building privacy-first wellness pattern intelligence products.">
+  <title>Arteev Labs Inc. | Pattern intelligence for people and organizations</title>
+  <meta name="description" content="Arteev Labs Inc. builds privacy-first pattern intelligence: a personal wellness app for individuals, and the next generation of People Intelligence for organizations.">
   <link rel="canonical" href="https://arteev.co/">
+  <link rel="alternate" hreflang="en" href="https://arteev.co/">
+  <link rel="alternate" hreflang="ko" href="https://arteev.co/index-ko.html">
+  <link rel="alternate" hreflang="x-default" href="https://arteev.co/">
+  <script>
+    (function() {
+      var lang;
+      try { lang = localStorage.getItem("arteev-lang"); } catch(e) {}
+      if (lang === "ko") location.replace("index-ko.html");
+    })();
+  </script>
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://arteev.co/">
-  <meta property="og:title" content="Arteev Labs Inc. | Mobile software for personal wellness intelligence">
-  <meta property="og:description" content="Arteev Labs Inc. is a Korea-based mobile software studio building privacy-first wellness pattern intelligence products.">
+  <meta property="og:title" content="Arteev Labs Inc. | Pattern intelligence for people and organizations">
+  <meta property="og:description" content="Arteev Labs Inc. builds privacy-first pattern intelligence: a personal wellness app for individuals, and the next generation of People Intelligence for organizations.">
   <meta property="og:image" content="https://arteev.co/assets/favicon-180.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Arteev Labs Inc.">
-  <meta name="twitter:description" content="Korea-based mobile software studio building privacy-first wellness pattern intelligence products.">
+  <meta name="twitter:description" content="Privacy-first pattern intelligence: a personal wellness app, and the next generation of People Intelligence for organizations.">
   <meta name="twitter:image" content="https://arteev.co/assets/favicon-180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=20260531d">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png?v=20260531d">
@@ -21,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260612">
+  <link rel="stylesheet" href="styles.css?v=20260714">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,7 +40,7 @@
     "url": "https://arteev.co/",
     "logo": "https://arteev.co/assets/favicon-180.png",
     "email": "hello@arteev.co",
-    "description": "Korea-based mobile software studio building privacy-first wellness pattern intelligence products."
+    "description": "Arteev Labs Inc. builds privacy-first pattern intelligence: a personal wellness app for individuals, and the next generation of People Intelligence for organizations."
   }
   </script>
 </head>
@@ -43,9 +53,11 @@
       </a>
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#product">Product</a>
+        <a href="#work">For Work</a>
         <a href="#company">Company</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
+        <a href="index-ko.html" data-lang="ko" class="nav-lang" lang="ko">한국어</a>
       </nav>
     </div>
   </header>
@@ -54,14 +66,15 @@
     <section class="hero">
       <div class="container">
         <div class="hero-inner">
-          <h1>Mobile software for <em>personal wellness intelligence</em>.</h1>
+          <h1>Pattern intelligence for people <em>and the organizations they work in</em>.</h1>
           <p class="hero-lead">
-            At Arteev Labs, we&rsquo;re building the next generation of wellness intelligence
-            &mdash; designed for the privacy-conscious.
+            At Arteev Labs, we build privacy-first pattern intelligence &mdash; a personal
+            wellness companion for individuals, and the next generation of
+            People&nbsp;Intelligence for organizations.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="mailto:hello@arteev.co">Contact us</a>
-            <a class="button secondary" href="#company">Company information</a>
+            <a class="button secondary" href="#work">Arteev for Work</a>
           </div>
         </div>
       </div>
@@ -70,23 +83,14 @@
     <section id="product">
       <div class="container">
         <div class="section-heading">
-          <div class="section-eyebrow">Our flagship product</div>
+          <div class="section-eyebrow">For individuals</div>
           <h2>Arteev.</h2>
           <p>
-            Arteev is our flagship product, currently in development. It is a wellness journal,
-            not a medical device. It does not diagnose, treat, cure, or prevent any disease.
+            Arteev is our flagship product. Speak about your day for a minute; Arteev connects
+            it with your health signals and shows you the patterns behind how you feel. It is a
+            wellness journal, not a medical device. It does not diagnose, treat, cure, or
+            prevent any disease.
           </p>
-          <style>
-            .product-cta { margin-top: 28px; text-align: center; }
-            .product-cta__features {
-              list-style: none; margin: 0 0 24px; padding: 0;
-              display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
-            }
-            .product-cta__features li {
-              font-size: 14px; color: var(--ink-soft);
-              border: 1px solid var(--line); border-radius: 999px; padding: 8px 16px;
-            }
-          </style>
           <div class="product-cta">
             <ul class="product-cta__features">
               <li>Voice-first logging</li>
@@ -95,6 +99,70 @@
             </ul>
             <a class="button secondary" href="https://arteev.app" target="_blank" rel="noopener">arteev.app &rarr;</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-eyebrow">For organizations &middot; Arteev for Work</div>
+          <h2>The next generation of people analytics.<br>
+          We call it <em>Organizational Pattern Intelligence</em>.</h2>
+          <p>
+            Most companies already hold vast amounts of employee data &mdash; and still can&rsquo;t
+            see the patterns that shape organizational health. Arteev answers the questions that
+            matter, without ever exposing an individual:
+          </p>
+        </div>
+
+        <ul class="work-questions">
+          <li>Did stress rise after the reorganization?</li>
+          <li>Did return-to-office improve wellbeing &mdash; or erode it?</li>
+          <li>Is the organization drifting toward burnout?</li>
+          <li>Are sleep and energy recovering after a hard quarter?</li>
+        </ul>
+
+        <div class="work-narrative">
+          <p>
+            Employees get the full personal Arteev app &mdash; private, theirs. Leaders see
+            only anonymized, aggregate patterns &mdash; never an individual. Not by policy,
+            <strong>by construction</strong>.
+          </p>
+          <p>
+            No annual-survey lag, no gut-feel decisions: leaders watch patterns move as the
+            organization changes, without breaking employee trust. Not more data &mdash; the
+            patterns already in the data you have.
+          </p>
+        </div>
+
+        <p class="work-statement serif">
+          &ldquo;Arteev doesn&rsquo;t monitor people. We help organizations understand
+          their own patterns.&rdquo;
+        </p>
+
+        <div class="work-wall">
+          <div class="work-wall__item">
+            <h3>Aggregate only</h3>
+            <p>Every number a leader sees is a group-level rollup. There is no individual
+            view to request, grant, or leak.</p>
+          </div>
+          <div class="work-wall__item">
+            <h3>Anonymous by construction</h3>
+            <p>Metrics render only above a strict minimum group size. Words, recordings, and
+            personal logs never leave the individual&rsquo;s private space.</p>
+          </div>
+          <div class="work-wall__item">
+            <h3>Employees own their data</h3>
+            <p>Joining is explicit and revocable. Leaving the company ends the seat &mdash;
+            never the person&rsquo;s data.</p>
+          </div>
+        </div>
+
+        <div class="work-cta">
+          <a class="button primary" href="mailto:hello@arteev.co?subject=Arteev%20for%20Work%20%E2%80%94%20design%20partner">Become a design partner</a>
+          <p class="work-cta__note">Arteev for Work is in development. We are partnering with a
+          small number of design-partner companies ahead of launch.</p>
         </div>
       </div>
     </section>
@@ -113,6 +181,11 @@
               <strong>Wellness, not medicine.</strong> Arteev helps users reflect on personal patterns. It is
               not a diagnostic tool, not a substitute for professional care, and does not generate medical
               advice.
+            </p>
+            <p>
+              <strong>Patterns, not surveillance.</strong> For organizations, Arteev reports anonymized,
+              aggregate patterns over time &mdash; associations, not diagnoses or causal claims. No employer
+              can see an individual, and no individual-level view exists to be granted.
             </p>
           </div>
         </div>
@@ -139,8 +212,9 @@
             <div>Mobile software development studio</div>
           </div>
           <div class="company-row">
-            <div class="company-label">Product</div>
-            <div>Arteev &mdash; wellness pattern intelligence app (in development)</div>
+            <div class="company-label">Products</div>
+            <div>Arteev &mdash; personal wellness pattern intelligence app &middot;
+            Arteev for Work &mdash; organizational pattern intelligence (in development)</div>
           </div>
           <div class="company-row">
             <div class="company-label">Contact</div>
@@ -169,6 +243,11 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+    document.querySelectorAll("[data-lang]").forEach(function(a) {
+      a.addEventListener("click", function() {
+        try { localStorage.setItem("arteev-lang", a.dataset.lang); } catch(e) {}
+      });
+    });
   </script>
 </body>
 </html>
